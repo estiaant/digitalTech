@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#3e3b65">
+<title>Little Computer Club · Build a computer</title>
+<link rel="stylesheet" href="style.css">
+<script src="content.js" defer></script><script src="art-sources.js" defer></script><script src="art.js" defer></script><script src="music.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<canvas id="world" width="480" height="320" aria-hidden="true"></canvas>
+<header class="game-hud"><a class="brand" href="./">Little Computer Club</a><span class="module">Grade 8 · 1.1</span><div class="hud-controls"><button id="music" aria-pressed="false">Music: off</button><button id="restart" hidden>New game</button></div></header>
+<main id="app"></main>
+<p id="asset-error" class="dialogue" role="alert" hidden>We couldn’t load the artwork. Keep all game files together, then reload.</p>
+<dialog id="restart-dialog" aria-labelledby="restart-title"><h2 id="restart-title">A fresh start?</h2><p>This will clear your current build.</p><form method="dialog"><button value="cancel" class="secondary">Keep playing</button><button value="restart" class="primary">New game</button></form></dialog>
+<noscript><p class="dialogue">Enable JavaScript, then reload to enter the computer club.</p></noscript>
+</body></html>
